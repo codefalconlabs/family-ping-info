@@ -33,7 +33,7 @@
   <h1>Privacy Policy</h1>
   <p><strong>App:</strong> Family Ping</p>
   <p><strong>Developer:</strong> Code Falcon Labs</p>
-  <p><strong>Effective date:</strong> May 11, 2026</p>
+  <p><strong>Effective date:</strong> November 17, 2026</p>
 
   <p>
     This Privacy Policy explains how Family Ping collects, uses, stores,
@@ -47,7 +47,8 @@
     <li><strong>Account information:</strong> username, mobile number, password credentials handled by Back4App/Parse authentication, and display name.</li>
     <li><strong>Trusted contact information:</strong> trusted contact names, mobile numbers, invite codes, pairing request status, and device identifiers generated for app functionality.</li>
     <li><strong>Location information:</strong> device location is collected only when a trusted contact requests location sharing and the app has the required location permissions.</li>
-    <li><strong>Camera access:</strong> the camera is used only to scan QR invite codes. The app does not store photos, videos, or camera frames.</li>
+    <li><strong>Camera access:</strong> the camera is used only to scan QR invite codes. The app does not store QR-scanning camera images, videos, or frames.</li>
+    <li><strong>Photos and saved locations:</strong> profile photos and contact photos you select are uploaded to Back4App/Parse and cached on your device. Profile photo references may be shared with your approved trusted contacts. Named saved locations are backed up to your account.</li>
     <li><strong>Device and notification information:</strong> Firebase Cloud Messaging tokens, installation identifiers, app device identifiers, notification status, app version, and timestamps needed to send pairing and location request notifications.</li>
     <li><strong>Technical information:</strong> logs, request status, error messages, and basic diagnostic data needed to operate and secure the service.</li>
   </ul>
@@ -79,6 +80,12 @@
     approved trusted contacts. Location is not collected continuously for
     advertising or analytics. Location is collected when needed to reply to a
     trusted-contact request and is shared only with the approved requester.
+    Family Ping collects and shares location even when the app is closed or not
+    in use, after you agree to background location sharing and grant the required
+    Android permissions. During a timed tracking session, the app collects
+    repeated location updates until the session ends or is stopped. A foreground
+    notification identifies active sharing and provides a Stop action for tracking.
+    Received locations are stored in location history on Back4App/Parse.
   </p>
 
   <h2>Push Notifications</h2>
@@ -94,8 +101,10 @@
     We use third-party service providers to operate the app:
   </p>
   <ul>
-    <li><strong>Back4App/Parse:</strong> account authentication, app database, remote configuration, trusted-contact records, invite records, and location request records.</li>
+    <li><strong>Back4App/Parse:</strong> account authentication, app database, remote configuration, trusted-contact records, invite records, location request records, received location history, saved-location backups, and uploaded photos.</li>
     <li><strong>Firebase Cloud Messaging:</strong> push notification delivery.</li>
+    <li><strong>OpenFreeMap:</strong> map styles and map tiles for the in-app tracking map. Map tile requests disclose the viewed map area and network information to the tile provider.</li>
+    <li><strong>Android location and geocoding providers:</strong> obtaining device location and converting received coordinates into place names.</li>
     <li><strong>Google Maps or browser apps:</strong> when you choose to open a received location in a map.</li>
   </ul>
   <p>
@@ -126,8 +135,13 @@
     We retain account, trusted-contact, invite, notification, and location request
     records for as long as needed to provide the app, maintain security, resolve
     disputes, comply with legal obligations, or enforce our terms. You may remove
-    trusted contacts in the app. To request account or data deletion, contact us
-    using the privacy contact below.
+    trusted contacts in the app. Received location history, saved locations,
+    uploaded photos, and related records remain until removed through the app
+    or account deletion. In Settings, use Location History to clear received
+    locations, or Delete Account to permanently delete your account and related
+    shared data, photos, saved-location backups, trust links, and device registrations.
+    If deletion is interrupted, return to Delete Account to retry. You can also
+    request account or data deletion using the privacy contact below.
   </p>
 
   <h2>Children's Privacy</h2>
@@ -142,7 +156,8 @@
   <h2>Your Choices</h2>
   <ul>
     <li>You can deny or revoke camera, notification, or location permissions in Android settings, but some app features may stop working.</li>
-    <li>You can remove trusted contacts from within the app.</li>
+    <li>You can stop live tracking from the sharing notification or the tracking screen and remove trusted contacts within the app.</li>
+    <li>You can clear received location history and delete your account in Settings.</li>
     <li>You can request access, correction, or deletion of your data by contacting us.</li>
   </ul>
 
